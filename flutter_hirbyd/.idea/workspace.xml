@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c61fb5ac-eb5a-4d2d-bc64-626dfb5db6b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../flutter_dart_learn/lib/Generic_learn.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flutter_dart_learn/lib/OOP_learn.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flutter_dart_learn/lib/function_learn.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flutter_dart_learn/lib/skill_learn.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/flutter_hirbyd.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_module/flutter_module.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_module/flutter_module_android.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flutter_jichu_base/lib/PluginUse.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1sREXWjki09ivlRXb7s28GkvWPl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="FlutterRunConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c61fb5ac-eb5a-4d2d-bc64-626dfb5db6b3" name="Default Changelist" comment="" />
+      <created>1620827041943</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620827041943</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="315" y="158" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620827569018">
+      <screen x="0" y="25" width="1680" height="954" />
+    </state>
+    <state x="315" y="158" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.954@0.25.1680.954" timestamp="1620827569018" />
+    <state x="315" y="158" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.956@0.25.1680.956" timestamp="1620827505866" />
+    <state x="352" y="135" key="SettingsEditor" timestamp="1620827385848">
+      <screen x="0" y="25" width="1680" height="954" />
+    </state>
+    <state x="352" y="135" key="SettingsEditor/0.25.1680.954@0.25.1680.954" timestamp="1620827385848" />
+    <state x="643" y="237" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1620827300124">
+      <screen x="0" y="25" width="1680" height="954" />
+    </state>
+    <state x="643" y="237" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.25.1680.954@0.25.1680.954" timestamp="1620827300124" />
+    <state x="634" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620827305245">
+      <screen x="0" y="25" width="1680" height="954" />
+    </state>
+    <state x="634" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1680.954@0.25.1680.954" timestamp="1620827305245" />
+  </component>
+</project>
