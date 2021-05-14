@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:flutter_trip/dao/home_dao.dart';
+import 'package:flutter_trip/model/common_model.dart';
 import 'package:flutter_trip/model/home_model.dart';
+import 'package:flutter_trip/widgets/local_nav.dart';
 const APPBAR_SCROLL_OFFSET = 100;
 class HomePage extends StatefulWidget{
   @override
@@ -11,13 +13,15 @@ class HomePage extends StatefulWidget{
 
 class _HomePageState extends State<HomePage>{
 
-
-
   List<String> _imageurl = [
       'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1832803776,3613997408&fm=26&gp=0.jpg',
     'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01c2dc5aa0ef6ea801206d965bf215.jpg%401280w_1l_2o_100sh.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1623332870&t=69f1d42afc447c1ef2ea86679805837d',
     'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F019f8358c1010ea801219c772d587a.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1623332870&t=a1c94cc8515fb4aed687c17a3a19be82'
   ];
+
+  //定义球区入口接收数组
+  List<CommonModel> localNavlist = [];
+
   double appBarAlpha = 0;
   final PageController _controller = PageController(
     initialPage: 0,
@@ -25,6 +29,7 @@ class _HomePageState extends State<HomePage>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xfff2f2f2),
       body: Stack(
         children: [
           MediaQuery.removePadding(
@@ -48,6 +53,9 @@ class _HomePageState extends State<HomePage>{
                         },
                         pagination: SwiperPagination(),
                       ),
+                    ),
+                    Padding(padding:EdgeInsets.fromLTRB(7, 4, 7, 4),
+                    child: LocalNav(localNavlist:localNavlist),
                     ),
                     Container(
                       height: 800,
@@ -98,7 +106,9 @@ class _HomePageState extends State<HomePage>{
 
   Future<Null> _loaddata() async{
     HomeModel model = await HomeDao.fetch();
-    print(model.tojson());
+    setState(() {
+      localNavlist = model.localNavList;
+    });
     return null;
   }
 
