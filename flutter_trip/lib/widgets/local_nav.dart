@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_trip/model/common_model.dart';
+import 'package:flutter_trip/widgets/web_view.dart';
 
 class LocalNav extends StatelessWidget{
 
@@ -31,8 +32,8 @@ class LocalNav extends StatelessWidget{
   Widget _items(BuildContext context) {
     if(localNavlist == null) return null;
     List<Widget> items = [];
-    localNavlist.forEach((commonmodel) { 
-      items.add(_item(context,commonmodel));
+    localNavlist.forEach((model) {
+      items.add(_item(context,model));
     });
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -44,15 +45,21 @@ class LocalNav extends StatelessWidget{
    * 里面的每个小widget，由图片和文字构成，形成一个 colomu  widget
    */
 
-  Widget _item(BuildContext context, CommonModel commonmodel) {
+  Widget _item(BuildContext context, CommonModel model) {
     return GestureDetector(
       onTap: (){
-
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>WebView(
+            url: model.url,
+            statusBarColor: model.statusBarColor,
+            title: model.title,
+            hideAppBar: false,
+            backForbid: true,
+          )));
       },
       child: Column(
         children: [
-           Image.network(commonmodel.icon,width: 32,height: 32,),
-           Text(commonmodel.title,style: TextStyle(fontSize: 12),),
+           Image.network(model.icon,width: 32,height: 32,),
+           Text(model.title,style: TextStyle(fontSize: 12),),
         ],
       ),
     );

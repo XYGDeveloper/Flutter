@@ -30,7 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_swiper: ^1.1.6
   http: ^0.13.3
-  flutter_webview_plugin: ^0.3.11 #webview跳转
+  flutter_webview_plugin: ^0.3.10+1 #webview跳转
 dev_dependencies:
   flutter_test:
     sdk: flutter
