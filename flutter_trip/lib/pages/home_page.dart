@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:flutter_trip/dao/home_dao.dart';
 import 'package:flutter_trip/model/common_model.dart';
+import 'package:flutter_trip/model/gridnav_Model.dart';
 import 'package:flutter_trip/model/home_model.dart';
+import 'package:flutter_trip/widgets/gird_nav.dart';
 import 'package:flutter_trip/widgets/local_nav.dart';
+import 'package:flutter_trip/widgets/sub_nav.dart';
 const APPBAR_SCROLL_OFFSET = 100;
 class HomePage extends StatefulWidget{
   @override
@@ -21,6 +24,8 @@ class _HomePageState extends State<HomePage>{
 
   //定义球区入口接收数组
   List<CommonModel> localNavlist = [];
+  GirdNavModel girdNavModel;
+  List<CommonModel> subNavlist = [];
 
   double appBarAlpha = 0;
   final PageController _controller = PageController(
@@ -55,8 +60,11 @@ class _HomePageState extends State<HomePage>{
                       ),
                     ),
                     Padding(padding:EdgeInsets.fromLTRB(7, 4, 7, 4),
-                    child: LocalNav(localNavlist:localNavlist),
-                    ),
+                    child: LocalNav(localNavlist:localNavlist)),
+                    Padding(padding: EdgeInsets.fromLTRB(7, 0, 7, 4),
+                      child: GirdNav(girdNavModel: girdNavModel)),
+                    Padding(padding: EdgeInsets.fromLTRB(7, 0, 7, 4),
+                        child: SubNav(subNavList: subNavlist)),
                     Container(
                       height: 800,
                       child: ListTile(title: Text('哈哈'),),
@@ -108,6 +116,8 @@ class _HomePageState extends State<HomePage>{
     HomeModel model = await HomeDao.fetch();
     setState(() {
       localNavlist = model.localNavList;
+      girdNavModel = model.gridNav;
+      subNavlist = model.subNavList;
     });
     return null;
   }
