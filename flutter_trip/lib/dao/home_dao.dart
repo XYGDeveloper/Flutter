@@ -11,7 +11,6 @@ const String  Domin = 'www.devio.org';
 
 class HomeDao {
   static Future<HomeModel> fetch() async {
-
      final response =  await http.get(Uri.http(Domin, 'io/flutter_app/json/home_page.json'));
      if(response.statusCode == 200){
         //解决中文乱码
